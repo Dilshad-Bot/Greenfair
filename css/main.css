@@ -1,0 +1,944 @@
+/*Global CSS*/
+
+	*{
+		font-family: 'Open Sans', sans-serif;
+	}
+
+/*Header Contact Section*/
+
+	.header-contacts{
+		background: #fbfbfb;
+		border-bottom: 1px solid #f2f2f2;
+		color: #646464;
+		padding: 0.4rem 0;
+	}
+	.header-contacts i{
+		transition: all 0.2s linear;
+	}	
+	.header-contacts p{
+	    font-size: 12px;
+	    display: inline-block;
+	    margin-bottom: 0;
+	}
+	.header-contacts .locate{
+		padding-right: 0;
+		transition: all 0.2s linear;
+	}
+	.header-contacts .call{
+		padding-left: 0;
+		transition: all 0.2s linear;
+	}
+	.header-contacts .contact{
+	    text-align: center;
+	}
+	.header-contacts .contact i{
+	    margin: 0 3%;
+	}
+	.header-contacts i:hover,
+	.header-contacts .locate:hover,
+	.header-contacts .call:hover{
+		color: #43a906;
+		transform: scale(1.1);
+	}
+
+/*Navbar Section*/
+
+	.navbar{
+	    padding-bottom: 0;
+	}
+	.navbar-toggler-icon{}
+	.navbar .nav-item{
+		box-sizing: content-box;
+		padding: 1.4rem 1.1rem;
+		border-bottom: 4px solid #fff;
+		transition: all 0.2s ease-in;
+		letter-spacing: 1px;
+	}
+	.navbar .nav-item .nav-link{
+	    padding: 0;
+	    font-family: 'Roboto Slab', serif;
+	    font-weight: 700;
+	    color: #393939;
+	    transition: all 0.2s ease-in;
+	}
+	.navbar .nav-item.active,
+	.navbar .nav-item:hover{
+		border-bottom: 4px solid #43a906;
+	}
+	.navbar .nav-item:hover .nav-link,
+	.navbar .nav-item.active .nav-link{
+		color: #43a906;
+	}
+
+/*Banner Section*/
+
+	.banner{
+		background: url(../images/banner.jpg);
+		background-position: center;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+	.banner .row{
+		min-height: 85vh;
+	}
+	.banner-text{
+		text-align: center;
+		width: 100%;
+		color: #fff;
+	}
+	.banner h1{
+	    text-transform: uppercase;
+	    font-weight: 700;
+	    font-size: 56px;
+	}
+	.banner h1 span{
+	    font-weight: 400;
+	    display: block;
+	    color: #fff;
+	}
+	.banner p{
+	    margin-bottom: 2rem;
+	    margin-top: 1rem;
+	}
+	.banner .btn-cta{
+	    color: #fff;
+	    text-transform: uppercase;
+	    padding: .7rem 2rem;
+	    border-top: 2px solid;
+	    border-bottom: 2px solid;
+	    border-radius: 0;
+	    transition: 0.2s linear;
+	}
+	.banner .btn-cta:hover,
+	.banner .btn-cta:focus{
+		box-shadow: none;
+		background: rgba(25, 156, 43, 0.6);
+	}
+
+/*Welcome Section*/
+	.welcome{
+	    padding: 4% 0;
+	}
+	.welcome-text h3{
+	    text-align: center;
+	    font-size: 40px;
+	    text-transform: uppercase;
+	    font-weight: 700;
+	    color: #222;
+	    font-family: 'Roboto Slab',serif;
+	    letter-spacing: 1px;
+	    margin-bottom: 2%;
+	}
+	.welcome-text p{
+	    color: #222;
+	    text-align: center;
+	    margin-bottom: 4%;
+	    font-weight: 700;
+	    font-size: 15px;
+	}
+	.welcome .card{
+	    border: 0;
+	}
+	.welcome .card-img-top{
+		text-align: center;
+		margin-bottom: 3%;
+	}
+	.welcome .card-img-top i{
+		font-size: 3.2rem;
+		color: #c4c4c4;
+		height: 8rem;
+		width: 8rem;
+		line-height: 8rem;
+		border: 3px solid;
+		border-radius: 50%;
+		transition: all 0.2s ease-out;
+	}
+	.welcome .card-body h5{
+	    text-align: center;
+	    color: #222;
+	    font-weight: 700;
+	    text-transform: uppercase;
+	    font-family: 'Roboto Slab',serif;
+	    font-size: 22px;
+	    margin-bottom: 5%;
+	}
+	.welcome .card-body{
+		padding: 0;
+		padding-top: 5%;
+	}
+	.welcome .card-body p{
+	    color: #646464;
+	    text-align: center;
+	    line-height: 1.8;
+	    font-size: 15px;
+	}
+	.welcome .card-img-top i:hover{
+		border:3px solid #fff;
+		background: #43a906;
+		color: #fff;
+	}
+
+/*Volunteer Section*/
+	.volunteer{
+		background: linear-gradient(rgba(34, 34, 34, 0.9),rgba(34, 34, 34, .9)), url(../images/join-bg.jpg);
+		background-position: center;
+		background-size: cover;
+		padding: 2% 0;
+		box-shadow: 0px -3px 5px 3px #ccc;
+	}
+	.volunteer-text{
+		color: #fff;
+	}
+	.volunteer-text h3{
+		font-size: 40px;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-family: 'roboto slab', serif;
+	    color: #fff;
+	}
+	.volunteer-text .highlight{
+		font-family: 'roboto slab', serif;
+		color: #43a906;
+	}
+	.volunteer-text p{
+		padding-right: 7%;
+		font-size: 15px;
+	}
+	.volunteer .join{
+	    text-align: right;
+	    margin: auto;
+	}
+	.volunteer .btn-join{
+		background: #43a906;
+		color: #fff;
+		text-transform: uppercase;
+		padding: .7rem 3.5rem;
+		transition: all 0.2s linear;
+	}
+	.volunteer .btn-join:hover{
+		box-shadow: inset 0px 0px 5px #43a906;
+		background: #378a05;
+	}
+
+/*Gallery Section*/
+	.gallery{
+	    padding: 3% 0;
+	}
+	.gallery-text{
+	    text-align: center;
+	    margin-bottom: 3%;
+	}
+	.gallery-text h3{
+		font-size: 40px;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-family: 'roboto slab', serif;
+		color: #222;
+	}
+	.gallery-text p{
+		color: #393939;
+		text-align: center;
+		margin-bottom: 4%;
+		font-weight: 700;
+		font-size: 15px;
+	}
+	.gallery ul{
+	    list-style: none;
+	    padding: 0;
+	    display: block;
+	    margin: 2% auto;
+	    text-align: center;
+	    margin-bottom: 4%;
+	}
+	.gallery ul li{
+	    display: inline-block;
+	    margin: 1%;
+	}
+	.gallery ul li .gal-head{
+	    font-size: 16px;
+	    text-transform: uppercase;
+	    padding: .7rem 1.2rem;
+	    background: #f6f6f6;
+	    border: 1px solid #efefef;
+	    color: #726e6e;
+	}
+	.gallery .gal-head:hover{
+		background: #43a906;
+		color: #fff;
+		border: 1px solid #43a906;
+	}
+	.gallery .gal-head:focus{
+		background: #43a906;
+		color: #fff;
+		border: 1px solid #43a906;
+		box-shadow: none;
+	}
+	.gal-img{
+		padding: .2rem;
+		position: relative;
+		overflow: hidden;
+		transition: all 0.2s linear;
+	}
+	.overlay{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		background: linear-gradient(rgb(49, 84, 49),rgba(76, 76, 76, 0.5));
+		border: 12px solid#13674e;
+		opacity: 0;
+		transition: all 0.2s linear;
+		z-index: 100;
+	}
+	.overlay h4{
+		text-align: center;
+		display: block;
+		vertical-align: middle;
+		color: #fff;
+		font-size: 27px;
+		font-family: 'roboto slab',serif;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	.gal-img:hover{
+		transform: scale(0.95);
+	}
+	.gal-img:hover .overlay{
+		opacity: 1;
+	}
+
+/*Achievement Section*/
+	.achievement{
+		background: linear-gradient(to top,rgba(13, 95, 45, 0.5), rgba(10, 54, 88, 0.7)), 
+		url(../images/achieve-bg.jpg);
+		padding: 3% 0;
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center;
+	}
+	.achieve-text{
+	    text-align: center;
+	    color: #fff;
+	    margin-bottom: 3%;
+	}
+	.achieve-text h3{
+	    font-size: 40px;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-family: 'roboto slab', serif;
+	    color: #fff;
+	}
+	.achievement .col-md{
+	    text-align: center;
+	    color: #fff;
+	}
+	.achievement .col-md i{
+	    font-size: 60px;
+	    width: 6rem;
+	    height: 6rem;
+	    line-height: 6rem;
+	    color: #43a906;
+	}
+	.achievement .col-md h3{
+		font-family: 'roboto slab', serif;
+	}
+	.achievement .col-md .line{
+		width: 55%;
+		height: 3px;
+		background: #fff;
+		margin: 8% auto;
+	}
+	.achievement .col-md h5{
+	    text-transform: uppercase;
+	    font-family: 'roboto slab', serif;
+	}
+
+/*Event Section*/
+	.event{
+		padding: 3% 0;
+	}
+	.event-text{
+		text-align: center;
+	}
+	.event-text h3{
+		font-size: 40px;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-family: 'roboto slab', serif;
+	    color: #222;
+	}
+	.event-text p{
+		color: #393939;
+	    text-align: center;
+	    margin-bottom: 4%;
+	    font-weight: 700;
+	    font-size: 15px;
+	}
+	.event-img{
+		padding: 0;
+	}
+	.event-info{
+		background: #eff0f2;
+		padding: 3%;
+		text-align: center;
+		width: 100%;
+	}
+	.event-info h5{
+		color: #222;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-family: 'roboto slab', serif;
+	    color: #222;
+	}
+	.event-info small{
+		color: #646464;
+		font-family: 'roboto slab', serif;
+		display: block;
+		margin: 4% 0;
+	}
+	.event-info p{
+		color: #646464;
+		font-size: 15px;
+	}
+	.event-info .btn-more{
+		color: #43a906;
+		text-transform: uppercase;
+		padding: .5rem 1.7rem;
+		border-top: 2px solid;
+		border-bottom: 2px solid;
+		border-radius: 0;
+		transition: 0.2s linear;
+	}
+	.event-info .btn-more:focus{
+		box-shadow: none;
+	}
+	.event-info .btn-more:hover{
+		box-shadow: none;
+		background: #43a906;
+		color: #fff;
+		border: 2px solid #43a906;
+		border-radius: 3px;
+	}
+	.event .col-ms-6{
+		padding: 0;
+	}
+	.event .col-xl-4 .media img{
+		width: 18%;
+	}
+	.event .col-xl-4 .media-body{
+	    margin: 1% 0;
+	}
+	.event .col-xl-4 .media-body h5{
+		font-family: 'roboto slab', serif;
+		color: #222;
+		font-weight: 700;
+		font-size: 18px;
+	}
+	.event .col-xl-4 .media-body p{
+		color: #646464;
+		font-size: 15px;
+	}
+	.event .col-xl-4 .media:hover{
+	    background: #e4fdf6;
+	}
+
+/*Testimonial Section*/
+	.testimonial{
+		padding: 2% 0;
+		background: linear-gradient(rgba(34, 34, 34, 0.5), rgba(34, 34, 34, 0.7)),
+		url(../images/testimonial-bg.jpg);
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+	}
+	.test-text{
+		text-align: center;
+		color: #fff;
+	}
+	.test-text h3{
+		font-size: 40px;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-family: 'roboto slab', serif;
+		letter-spacing: 1px;
+	}
+	.test-text p{
+	    text-align: center;
+	    margin-bottom: 4%;
+	    font-size: 15px;
+	}
+	.testimonial .card{
+	    background: none;
+	    border: 0;
+	}
+	.testimonial .card img{
+	    width: 22%;
+	    display: block;
+	    margin: 0 auto;
+	    margin-bottom: -7%;
+	    z-index: 100;
+	}
+	.testimonial .card-body{
+		background: #ffff;
+		padding-top: 7%;
+	}
+	.testimonial .card-body p{
+	    font-style: italic;
+	}
+	.testimonial .quote{
+	    font-style: normal;
+	    font-weight: 700;
+	    font-size: 26px;
+	    font-family: 'roboto slab',serif;
+	}
+	.testimonial .user{
+	    text-align: center;
+	    margin-top: 2%;
+	}
+	.testimonial .user h5{
+	    color: #fff;
+	}
+	.testimonial .user h6{
+	    color: #41a906;
+	}
+
+/*Blog Section*/
+	.blog{
+		padding: 4% 0;
+	}
+	.blog-text{
+		text-align: center;
+	}
+	.blog-text h3{
+		font-size: 40px;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-family: 'roboto slab', serif;
+	    color: #222;
+	}
+	.blog-text p{
+		color: #646464;
+	    text-align: center;
+	    margin-bottom: 4%;
+	    font-weight: 700;
+	    font-size: 15px;
+	}
+	.blog .card-body h5{
+		font-family: 'roboto slab', serif;
+		color: #454444;
+	}
+	.blog .card-body small{
+		font-weight: 700;
+		color: #aeadad;
+		margin: 5% 0;
+		display: block;
+	}
+	.blog .card-body p{
+		color: #646464;
+		font-size: 15px;
+	}
+	.blog .card-body .btn-read{
+		margin-top: 3%;
+		text-transform: uppercase;
+		color: #545353;
+		font-weight: 700;
+		transition: all 0.15s linear;
+		padding: 0;
+	}
+	.blog .card-body .btn-read:hover{
+		color: #43a906;
+	}
+
+/*Wordpress Section*/
+	.wordpress{
+		background: linear-gradient(rgba(34, 34, 34, 0.9),rgba(34, 34, 34, .9)), url(../images/join-bg.jpg);
+		background-position: center;
+		background-size: cover;
+		padding: 2% 0;
+		box-shadow: 0px 3px 5px 3px #bfbfbf;
+	}
+	.wordpress .col-lg-9 h3{
+		font-size: 40px;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-family: 'roboto slab', serif;
+		color: #fff;
+		margin: 0;
+	}
+	.wordpress .purchase{
+		text-align: right;
+	}
+	.wordpress .purchase .btn-purchase{
+		background: #43a906;
+		color: #fff;
+		text-transform: uppercase;
+		padding: .7rem 3.5rem;
+		transition: all 0.2s linear;
+	}
+	.wordpress .purchase .btn-purchase:hover{
+		box-shadow: inset 0px 0px 5px #43a906;
+		background: #378a05;
+	}
+
+/*Sponser Section*/
+	.sponser{
+		padding: 3% 0;
+	}
+
+/*Contact Section*/
+	.contacts{
+		padding: 3% 0;
+		background: #eee;
+	}
+	.contact-text{
+		text-align: center;
+	}
+	.contact-text h3{
+		font-size: 40px;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-family: 'roboto slab', serif;
+		color: #222;
+		margin-bottom: 2%;
+	}
+	.contact-text p{
+		color: #646464;
+	    text-align: center;
+	    margin-bottom: 4%;
+	    font-weight: 700;
+	    font-size: 15px;
+	}
+	.contacts h5{
+		text-transform: uppercase;
+		font-family: 'roboto slab', serif;
+		color: #222;
+		margin-bottom: 2%;
+	}
+	.contacts ul{
+		list-style: none;
+		padding: 0;
+		margin: 4% 0 7%;
+	}
+	.contacts ul li{
+		color: #696969;
+		margin: 1% 0;
+		transition: all 0.2s linear;
+	}
+	.contacts ul li i{
+		width: 1.5rem;
+		height: 1.5rem;
+		line-height: 1.5rem;
+		text-align: center;
+		font-size: 18px;
+	}
+	.contacts ul li:hover{
+		color: #43a906;
+		transform: scale(1.1);
+	}
+	.contacts .form-control{
+		background: #d4d4d4;
+	}
+	.contacts textarea.form-control{
+		height: 10em;
+	}
+	.contacts .form-control::-webkit-input-placeholder{
+		font-size: 15px;
+		text-transform: capitalize;
+		font-style: italic;
+	}
+	.contacts .form-control:focus,
+	.contacts .form-control:hover{
+		border: 1px solid #9e9e9e;
+		box-shadow: none;
+	}
+	.contacts .btn-send{
+		background: #43a906;
+		color: #fff;
+		text-transform: uppercase;
+		padding: .7rem 3.5rem;
+		transition: all 0.2s linear;
+	}
+	.contacts .btn-send:hover{
+		box-shadow: inset 0px 0px 5px #43a906;
+		background: #378a05;
+	}
+
+/*Footer Section*/
+	.footer{
+		background: #222;
+		padding: 0.5rem;
+	}
+
+	.footer .col-md-3 p{
+		color: #fff;
+		font-size: 12px;
+		margin: 0;
+	}
+	.footer .col-md-2 p{
+		font-size: 12px;
+		color: #fff;
+		margin: 0;
+		text-align: right;
+	}
+
+/*Media Queries*/
+	@media (max-width: 1200px) {
+		.navbar .nav-item {
+			padding: 1.2rem 0.7rem;
+		}
+	}
+	@media (max-width: 992px) {
+		.header-contacts p{
+			font-size: 10px;
+		}
+		.header-contacts i{
+			font-size: 12px;
+		    width: 1rem;
+		    height: 1rem;
+		    line-height: 1rem;
+		    text-align: center;
+		}
+		.navbar{
+			padding-bottom: 2%;
+		}
+		.banner h1{
+			font-size: 50px;
+		}
+		.banner p{
+			font-size: 14px;
+		}
+		.welcome-text h3{
+			font-size: 30px;
+		}
+		.welcome-text p{
+			font-size: 13px;
+		}
+		.welcome .card i{
+			height: 6rem;
+		    width: 6rem;
+		    line-height: 6rem;
+		    font-size: 2.7rem;
+		}
+		.welcome .card-body h5{
+			font-size: 18px;
+		}
+		.welcome .card-body p{
+			font-size: 13px;
+		}
+		.volunteer-text h3{
+			font-size: 30px;
+		}
+		.volunteer-text p{
+			font-size: 13px;
+		}
+		.gallery-text h3{
+			font-size: 30px;
+		}
+		.gallery-text p{
+			font-size: 13px;
+		}
+		.gallery .gal-head{
+			font-size: 13px !important;
+		}
+		.gallery .overlay h4{
+			font-size: 15px;
+		}
+		.achieve-text h3{
+			font-size: 30px;
+		}
+		.achieve-text p{
+			font-size: 13px;
+		}
+		.achievement .col-md i{
+			width: 5rem;
+		    height: 5rem;
+		    line-height: 5rem;
+		    font-size: 52px;
+		}
+		.achievement .col-md h3{
+			font-size: 20px;
+		}
+		.achievement .col-md h5{
+			font-size: 17px;
+		}
+		.event-text h3{
+			font-size: 30px;
+		}
+		.event-text p{
+			font-size: 13px;
+		}
+		.event-info h5{
+			font-size: 20px;
+		}
+		.event-info p{
+			font-size: 13px;
+		}
+		.event-info small{
+			font-size: 10px;
+		}
+		.event-info .btn-more{
+			padding: .4rem 1.3rem;
+		    font-size: 14px;
+		    margin-top: 5%;
+		}
+		.event .media h5{
+			font-size: 17px !important;
+		}
+		.event .media p{
+			font-size: 13px !important;
+		}
+		.test-text h3{
+			font-size: 30px;
+		}
+		.test-text p{
+			font-size: 13px;
+		}
+		.testimonial .card-body p{
+			font-size: 14px;
+		}
+		.user h5{
+			font-size: 17px;
+		}
+		.user h6{
+			font-size: 14px;
+		}
+		.blog-text h3{
+			font-size: 30px;
+		}
+		.blog-text p{
+			font-size: 13px;
+		}
+		.blog .card{
+			margin-bottom: 4%;
+		}
+		.wordpress h3{
+			font-size: 30px !important;
+		}
+		.contact-text h3{
+			font-size: 30px;
+		}
+		.contact-text p{
+			font-size: 13px;
+		}
+		.contact ul li{
+			font-size: 14px;
+		}
+		.contact ul li i{
+			width: 1rem;
+			height: 1rem;
+			line-height: 1rem;
+			font-size: 16px;
+		}
+	}
+	@media (max-width: 768px) {
+		.banner{
+			background-attachment: scroll;
+		}
+		.achievement{
+			background-attachment: scroll;
+		}
+		.testimonial{
+			background-attachment: scroll;
+		}
+		.wordpress h3{
+			font-size: 27px;
+		}
+	}
+	@media (max-width: 576px) {
+		.wordpress h3{
+			text-align: center;
+		}
+		.wordpress .purchase{
+			text-align: center !important;
+		}
+		.wordpress .btn-purchase{
+	    	margin-top: 3%;
+		}
+		.welcome .card i{
+			margin-bottom: 0;
+		}
+		.welcome .card-body{
+			padding-top: 1%;
+		}
+		.welcome .card p{
+			padding: 0 20%;
+		}
+	}
+	@media (max-width: 320px) {
+		h3{
+			font-size: 25px !important;
+		}
+		p{
+			font-size: 13px !important;
+		}
+		.banner-text h1{
+			font-size: 40px;
+		}
+		.volunteer-text{
+			flex: 0 0 100%;
+	    	max-width: 100%
+		}
+		.volunteer-text{
+			text-align: center;
+		}
+		.join{
+			text-align: center !important;
+			flex: 0 0 100%;
+	    	max-width: 100%;
+		}
+		.gallery .overlay h4{
+			font-size: 13px;
+		}
+		.gallery .overlay{
+			border: 6px solid #13674e;
+		}
+		.testimonial .card p{
+			font-size: 12px;
+		}
+		.blog .card-body h5{
+			font-size: 15px;
+		}
+		.blog .card-body small{
+			font-size: 10px;
+		}
+		.blog .card-body p{
+			font-size: 12px;
+		}
+		.blog .btn-read{
+			font-size: 13px !important;
+		}
+		.sponser .col-3{
+			flex: 0 0 50%;
+			max-width: 50%;
+			margin-bottom: 2%;
+			margin-top: 2%;
+		}
+		.contact ul li{
+			font-size: 10px !important;
+		}
+		.achievement .col-md i{
+			width: 3.5rem;
+		    height: 3.5rem;
+		    line-height: 3.5rem;
+		    font-size: 44px;
+		}
+		.achievement .col-md h3{
+			font-size: 17px;
+		}
+		.achievement .col-md h5{
+			font-size: 14px;
+		}
+		.volunteer-text p{
+			padding: 0;
+		}
+		.volunteer .btn-join{
+			padding: .3rem 1rem !important;
+		}
+		.wordpress .btn-purchase{
+			padding: .3rem 1rem !important;
+		}
+	}
